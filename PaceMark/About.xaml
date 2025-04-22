@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PaceMark.About"
+             Title="About">
+    <ScrollView>
+        <VerticalStackLayout Padding="20">
+            <!-- Application Description -->
+            <Label 
+                Text="PaceMark Version 1.0"
+                FontSize="20"
+                HorizontalOptions="Center" 
+                VerticalOptions="Start"
+                FontAttributes="Bold" />
+
+            <Label 
+                Text="&#10;Application Description:  PaceMark is is a straightforward track and field app that allows users to input the following metrics: distance, total time, or pace, and automatically computes the missing value. The app offers lap splits, personal record tracking, and pace goal setting, all within a clean, minimalistic interface that prioritizes ease of use.&#10;"
+                FontSize="16"
+                HorizontalOptions="Start"
+                VerticalOptions="Start"
+                LineBreakMode="WordWrap"/>
+
+            <Label 
+                Text="Developer: Muhammad Danial Noor Shamsudin &#10;Student ID: SW01082114 &#10;Universiti Tenaga Nasional"
+                FontSize="16"
+                HorizontalOptions="Start"
+                VerticalOptions="Start"
+                LineBreakMode="WordWrap" />
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>

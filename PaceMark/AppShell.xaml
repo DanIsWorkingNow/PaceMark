@@ -5,11 +5,35 @@
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     xmlns:local="clr-namespace:PaceMark"
     Shell.FlyoutBehavior="Flyout"
+     Shell.BackgroundColor="OrangeRed"
+    Shell.TitleColor="White"
+    FlyoutIcon="runner.png"
     Title="PaceMark">
+
+    <Shell.FlyoutHeader>
+        <VerticalStackLayout>
+            <Label Text="MENU LIST" HeightRequest="50" HorizontalTextAlignment="Center" VerticalTextAlignment="Center"></Label>
+        </VerticalStackLayout>
+    </Shell.FlyoutHeader>
 
     <ShellContent
         Title="Home"
         ContentTemplate="{DataTemplate local:MainPage}"
         Route="MainPage" />
+
+    <ShellContent
+    Title="Track Record"
+    ContentTemplate="{DataTemplate local:Record}"
+    Route="Record" />
+
+    <ShellContent
+Title="Track Information"
+ContentTemplate="{DataTemplate local:Information}"
+Route="Information" />
+
+    <ShellContent
+Title="About Page"
+ContentTemplate="{DataTemplate local:About}"
+Route="About" />
 
 </Shell>
